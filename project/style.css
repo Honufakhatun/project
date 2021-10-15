@@ -1,0 +1,25 @@
+#main{display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px auto);
+
+
+
+}
+.child{background: rgb(172, 81, 81);
+color: rgb(255, 255, 255);
+ padding: 1em;
+
+}
+.child:nth-child(odd){background: rgb(35, 35, 87);}
+.child:nth-child(2){
+/* grid-row: 1/3;
+grid-column: 1/3;
+eta diye position change kora jay*/
+background: rgb(102, 67, 22);
+}
+.child:nth-child(6) {
+    background: rgb(89, 100, 41);
+    grid-row: 2/3;
+    grid-column: 3/3;
+}
